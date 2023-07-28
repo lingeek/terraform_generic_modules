@@ -55,11 +55,7 @@ variable "private_subnets" {
   }))
 }
 
-variable "nat_gateway_subnet" {
-  description = "Subnet where the NAT gateway will stay"
-  type = string
 
-}
 #End Private subnets
 
 
