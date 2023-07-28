@@ -56,11 +56,7 @@ variable "private_subnets" {
 }
 #End Private subnets
 
-variable "nat_gateway_subnet" {
-  description = "Subnet to associate the NAT gateway with"
-  type        = string
-  default     = "subnet1"
-}
+
 #End Network requirements
 
 #Tagging
