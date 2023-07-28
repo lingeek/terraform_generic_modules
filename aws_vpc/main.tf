@@ -84,7 +84,7 @@ resource "aws_internet_gateway" "internet_gateway" {
 #NAT Gateway
 resource "aws_nat_gateway" "nat_gateway" {
   allocation_id     = aws_eip.nat_eip.id
-  subnet_id         = var.public_subnets[subnet1].id
+  subnet_id         = aws_subnet.public_subnet["subnet1"].id
   tags = merge(
     var.business_tags,
     var.security_tags,
